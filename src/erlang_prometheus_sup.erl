@@ -6,8 +6,6 @@
 
 -export([init/1]).
 
--include("erlang_prometheus.hrl").
-
 start_link() ->
     supervisor:start_link({local, ?MODULE}, ?MODULE, []).
 
