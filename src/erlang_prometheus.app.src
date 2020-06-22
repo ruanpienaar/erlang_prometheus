@@ -1,0 +1,21 @@
+{application, erlang_prometheus,
+ [
+  {description, "Erlang repository for hosting metrics with cowboy"},
+  {vsn, "1"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib,
+                  crypto,
+                  cowlib,
+                  asn1,
+                  public_key,
+                  ssl,
+                  ranch,
+                  cowboy,
+                  prometheus,
+                  prometheus_cowboy
+                 ]},
+  {mod, { erlang_prometheus_app, []}},
+  {env, []}
+ ]}.
