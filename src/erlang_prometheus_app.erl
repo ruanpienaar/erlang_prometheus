@@ -2,14 +2,9 @@
 
 -behaviour(application).
 
-%% Application callbacks
--export([start/2, stop/1]).
-
--include("erlang_prometheus.hrl").
-
-%% ===================================================================
-%% Application callbacks
-%% ===================================================================
+-export([
+    start/2, stop/1
+]).
 
 start(_StartType, _StartArgs) ->
     Routes = [
